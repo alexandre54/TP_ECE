@@ -1,6 +1,8 @@
 name: Pylint
 
-on: [push]
+on: workflow_dispatch:
+schedule:
+- cron: "42 0 * * 4"
 
 jobs:
   build:
